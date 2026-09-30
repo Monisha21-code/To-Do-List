@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <title>Profile - My To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <nav>
+
+        <h2>📝 My To-Do List</h2>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                🏠 Home
+            </a>
+
+
+            <a href="profile.html">
+                👤 Profile
+            </a>
+
+
+            <a href="history.html">
+                📜 History
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <div class="container">
+
+
+        <div class="profile-box">
+
+
+            <div class="profile-icon">
+                👤
+            </div>
+
+
+            <h1>My Profile</h1>
+
+
+            <p class="profile-text">
+
+                Manage your account information
+
+            </p>
+
+
+            <label>
+                Name
+            </label>
+
+
+            <input
+                type="text"
+                id="profileName"
+                placeholder="Enter your name"
+            >
+
+
+            <label>
+                Email
+            </label>
+
+
+            <input
+                type="email"
+                id="profileEmail"
+                placeholder="Enter your email"
+            >
+
+
+            <button
+                class="save-profile"
+                onclick="updateProfile()">
+
+                💾 Save Changes
+
+            </button>
+
+
+            <button
+                class="logout-profile"
+                onclick="logout()">
+
+                🚪 Logout
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

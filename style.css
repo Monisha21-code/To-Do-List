@@ -1,0 +1,716 @@
+/* ================================= */
+/* GENERAL */
+/* ================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f3f4f6;
+
+    color: #333;
+
+}
+
+
+/* ================================= */
+/* NAVIGATION */
+/* ================================= */
+
+nav {
+
+    background-color: #333;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+nav h2 {
+
+    margin: 0;
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+}
+
+
+.nav-links a:hover {
+
+    color: #ddd;
+
+}
+
+
+/* ================================= */
+/* CONTAINER */
+/* ================================= */
+
+.container {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+    text-align: center;
+
+}
+
+
+.container h1 {
+
+    margin-bottom: 15px;
+
+}
+
+
+.welcome-text {
+
+    margin-bottom: 30px;
+
+    color: #666;
+
+}
+
+
+/* ================================= */
+/* SECTION TITLE */
+/* ================================= */
+
+.section-title {
+
+    margin-top: 40px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* ================================= */
+/* DASHBOARD */
+/* ================================= */
+
+.dashboard {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.dashboard-box {
+
+    background-color: white;
+
+    width: 200px;
+
+    padding: 25px 15px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.1);
+
+}
+
+
+.dashboard-icon {
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.dashboard-box h3 {
+
+    font-size: 32px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.dashboard-box p {
+
+    color: #666;
+
+}
+
+
+/* ================================= */
+/* PROGRESS */
+/* ================================= */
+
+.progress-box {
+
+    background-color: white;
+
+    max-width: 700px;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.1);
+
+}
+
+
+.progress-box h2 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.progress-box h3 {
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.progress-bar {
+
+    width: 100%;
+
+    height: 18px;
+
+    background-color: #ddd;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+.progress-fill {
+
+    width: 0%;
+
+    height: 100%;
+
+    background-color: #333;
+
+    transition: width 0.4s ease;
+
+}
+
+
+/* ================================= */
+/* CREATE TASK */
+/* ================================= */
+
+.create-task-box {
+
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.1);
+
+}
+
+
+.create-task-box h2 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.create-task-box input,
+
+.create-task-box textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+}
+
+
+.create-task-box textarea {
+
+    height: 100px;
+
+    resize: none;
+
+}
+
+
+.create-task-box label {
+
+    display: block;
+
+    text-align: left;
+
+    margin-bottom: 5px;
+
+}
+
+
+.create-task-box button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #333;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+
+.create-task-box button:hover {
+
+    background-color: #555;
+
+}
+
+
+/* ================================= */
+/* TASK LIST */
+/* ================================= */
+
+ul {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+
+.task {
+
+    background-color: white;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.1);
+
+    text-align: left;
+
+}
+
+
+.task h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.task p {
+
+    margin-bottom: 8px;
+
+    color: #666;
+
+}
+
+
+.task button {
+
+    padding: 8px 12px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    color: white;
+
+    cursor: pointer;
+
+    margin-right: 5px;
+
+}
+
+
+.complete {
+
+    background-color: #198754;
+
+}
+
+
+.delete {
+
+    background-color: #d9534f;
+
+}
+
+
+/* ================================= */
+/* LOGIN / SIGNUP */
+/* ================================= */
+
+.auth-body {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+}
+
+
+.auth-box {
+
+    width: 380px;
+
+    max-width: 90%;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.15);
+
+    text-align: center;
+
+}
+
+
+.auth-box h1 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.auth-box h2 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.auth-box p {
+
+    margin: 15px 0;
+
+    color: #666;
+
+}
+
+
+.auth-box input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+}
+
+
+.auth-box button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #333;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+
+.auth-box button:hover {
+
+    background-color: #555;
+
+}
+
+
+.auth-box a {
+
+    color: #333;
+
+    font-weight: bold;
+
+}
+
+
+/* ================================= */
+/* PROFILE */
+/* ================================= */
+
+.profile-box {
+
+    width: 450px;
+
+    max-width: 100%;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.1);
+
+    text-align: center;
+
+}
+
+
+.profile-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 15px;
+
+    background-color: #333;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 40px;
+
+}
+
+
+.profile-box h1 {
+
+    margin-bottom: 8px;
+
+}
+
+
+.profile-text {
+
+    color: #777;
+
+    margin-bottom: 25px;
+
+}
+
+
+.profile-box label {
+
+    display: block;
+
+    text-align: left;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+}
+
+
+.profile-box input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+}
+
+
+.save-profile {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #333;
+
+    color: white;
+
+    cursor: pointer;
+
+    margin-bottom: 10px;
+
+}
+
+
+.logout-profile {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #d9534f;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media (max-width: 600px) {
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+
+    }
+
+
+    .nav-links {
+
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+
+    .dashboard-box {
+
+        width: 45%;
+
+    }
+
+
+    .container {
+
+        width: 95%;
+
+    }
+
+}
